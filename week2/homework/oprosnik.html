@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/454576/animal-domestic-pet-8.svg" type="image/svg">
+    <title>Опросник для владельцев магических животных</title>
+</head>
+<body>
+<h1>Опросник для владельцев магических животных</h1>
+<div>
+<label for="pet-name">Кличка питомца</label>
+<input type="text" id="pet-name">
+</div>
+<div>
+    <label for="owner-name">Имя и контакты владельца</label>
+    <input type="text" id="owner-name">
+</div>
+<div>
+    <label for="pet-type">Тип питомца:</label>
+    <select name="type" id="pet-type">
+    <option value="cat">Кошка</option>
+    <option value="dog">Собака</option>
+    <option value="hamster">Хомяк</option>
+    <option value="lizard">Ящерица</option>
+    <option value="other">Другое (укажу в комментарии)</option>
+</select>
+</div>
+<div>
+    Чем питается? <br/>
+    <label for="dry-food">Сухой корм</label>
+    <input type="checkbox" name="pet-food" id="dry-food">
+    <br/>
+    <label for="wet-food">Влажный корм</label>
+    <input type="checkbox" name="pet-food" id="wet-food"> <br/>
+    <label for="natural-food">Натуральный корм</label>
+    <input type="checkbox" name="pet-food" id="natural-food"> <br/>
+</div>
+<div>
+    <label for="pet-gender-male">Пол</label>
+    <input type="radio" id="pet-gender-male" name="pet-gender" value="male" required>
+    <label for="pet-gender-male">Самец</label>
+    <input type="radio" id="pet-gender-female" name="pet-gender" value="female" required>
+    <label for="pet-gender-female">Самка</label>
+</div>
+<div>
+    <label for="comment">
+        Комментарий:
+        <textarea name="comment" cols="40" rows="3" id="comment"></textarea>
+        </label>
+</div>
+<div>
+    <input type="file">
+</div>
+<button>Сохранить</button>  
+</body>
+</html>
